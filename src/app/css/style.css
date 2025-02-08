@@ -7,6 +7,7 @@
 @theme {
   --font-inter: Inter, sans-serif;
   --font-mono: Roboto Mono, monospace;
+  --font-montserrat: Montserrat, sans-serif;
 
   --text-xs: 0.75rem;
   --text-xs--line-height: 1.5;

@@ -22,7 +22,7 @@ export default function MainLayout({ children }: { children: React.ReactNode }) 
     <>
       <Header />
 
-      <main className="grow">{children}</main>
+      <main className="grow mx-auto w-6xl px-4 sm:px-6">{children}</main>
 
       <Footer border={true} />
     </>

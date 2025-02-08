@@ -8,6 +8,10 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        Helvetica: ["var(--font-helvetica)"],
+        Montserrat: ["var(--font-montserrat)"],
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
