@@ -5,7 +5,7 @@ export default function Logo() {
   return (
     <Link href="/" aria-label="Hem">
       <div className="relative flex justify-center items-center">
-        <Image src="/logo.png" alt="anima nordica" width={235} height={87} priority unoptimized />
+        <Image src="/logo.png" alt="anima nordica" width={235} height={87} priority unoptimized className="shrink-0" />
         <div className="absolute bottom-[-5px] tracking-[0.4em] font-(family-name:--font-montserrat) text-[16px] text-white">
           KAMMARKÖR
         </div>

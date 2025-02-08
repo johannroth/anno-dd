@@ -15,6 +15,7 @@ const montserrat = Montserrat({
 
 import "./globals.css";
 import "./css/style.css";
+import MainLayout from "./mainLayout";
 
 export const metadata: Metadata = {
   title: (process.env.NODE_ENV === "development" ? "[dev]" : "") + "Kammerchor anima nordica Dresden",
@@ -23,14 +24,13 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  console.log(montserrat);
   return (
     <html lang="en" className="scroll-smooth">
       <body
         className={`${inter.variable} ${montserrat.variable} bg-gray-50 font-inter tracking-tight text-gray-900 antialiased`}
       >
         <div className="flex min-h-screen flex-col overflow-hidden supports-[overflow:clip]:overflow-clip">
-          {children}
+          <MainLayout>{children}</MainLayout>
         </div>
       </body>
     </html>

@@ -1,7 +1,7 @@
 @tailwind utilities;
 
 :root {
-  --background: #eaf9f9;
+  --background: var(--color-main-light);
   --foreground: #171717;
 }
 
@@ -19,5 +19,6 @@ body {
 }
 
 @theme {
-  --color-header-dark: #c4e2e2;
+  --color-main-light: #eaf9f9;
+  --color-main-dark: #c4e2e2;
 }

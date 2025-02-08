@@ -3,8 +3,8 @@ import Logo from "./logo";
 
 export default function Footer({ border = false }: { border?: boolean }) {
   return (
-    <footer>
-      <div className="mx-auto max-w-6xl px-4 sm:px-6 bg-header-dark rounded-2xl">
+    <footer className="mb-2 w-full">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6 bg-main-dark rounded-2xl">
         {/* Top area: Blocks */}
         <div
           className={`grid gap-10 py-8 sm:grid-cols-12 md:py-12 ${border ? "border-t [border-image:linear-gradient(to_right,transparent,var(--color-slate-200),transparent)1]" : ""}`}
@@ -14,7 +14,6 @@ export default function Footer({ border = false }: { border?: boolean }) {
             <div>
               <Logo />
             </div>
-            <div className="text-sm text-gray-600">&copy; Cruip.com - All rights reserved.</div>
           </div>
 
           {/* 2nd block */}
